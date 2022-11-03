@@ -28,6 +28,9 @@ const Form = (props) => {
         value={isbn}
         onChange={(e) => setIsbn(e.target.value)}
       />
+      <button tabIndex="0" type="submit">
+        {currentBookId !== null ? "Update" : "Add"}
+      </button>
     </form>
   );
 };
