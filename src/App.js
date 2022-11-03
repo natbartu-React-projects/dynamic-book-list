@@ -23,6 +23,12 @@ const App = () => {
     return title.trim() === "" || author.trim() === "" || isbn.trim() === "";
   };
 
+  const clearInput = () => {
+    setTitle("");
+    setAuthor("");
+    setIsbn("");
+  };
+
   const addBook = () => {
     setBooks([
       ...books,
@@ -37,6 +43,7 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    clearInput();
 
     if (isInputInvalid()) return;
 
