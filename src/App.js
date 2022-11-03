@@ -31,8 +31,8 @@ const App = () => {
           setIsbn={setIsbn}
           currentBookId={currentBookId}
         />
+        <Table books={books} />
       </Container>
-      <Table books={books} />
     </div>
   );
 };

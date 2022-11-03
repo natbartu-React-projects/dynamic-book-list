@@ -1,11 +1,15 @@
 import React from "react";
 
-const TableField = (fieldName) => {
+const TableField = ({ fieldName, settingsField }) => {
   return (
     <div className="tableField">
       {fieldName}
-      <i className="far fa-edit"></i>
-      <i className="far fa-trash-alt"></i>
+      {settingsField && (
+        <>
+          <i className="far fa-edit"></i>
+          <i className="far fa-trash-alt"></i>
+        </>
+      )}
     </div>
   );
 };
