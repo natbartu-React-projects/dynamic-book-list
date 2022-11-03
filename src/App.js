@@ -12,9 +12,9 @@ const App = () => {
   const [currentBookId, setCurrentBookId] = useState(null);
   const [books, setBooks] = useState([
     {
-      bookTitle: title,
-      bookAuthor: author,
-      bookIsbn: isbn,
+      bookTitle: "Book 1",
+      bookAuthor: "John Doe",
+      bookIsbn: "0000",
       bookId: uuidv4(),
     },
   ]);
