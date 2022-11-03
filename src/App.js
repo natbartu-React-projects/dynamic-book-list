@@ -50,6 +50,10 @@ const App = () => {
     addBook();
   };
 
+  const removeBook = (id) => {
+    setBooks(books.filter((book) => book.bookId !== id));
+  };
+
   return (
     <div className="App">
       <Container>
@@ -63,7 +67,7 @@ const App = () => {
           currentBookId={currentBookId}
           handleSubmit={handleSubmit}
         />
-        <Table books={books} />
+        <Table books={books} removeBook={removeBook} />
       </Container>
     </div>
   );
