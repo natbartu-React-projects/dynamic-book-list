@@ -21,7 +21,15 @@ const App = () => {
   return (
     <div className="App">
       <Container>
-        <Form />
+        <Form
+          title={title}
+          setTitle={setTitle}
+          author={author}
+          setAuthor={setAuthor}
+          isbn={isbn}
+          setIsbn={setIsbn}
+          currentBookId={currentBookId}
+        />
       </Container>
     </div>
   );
