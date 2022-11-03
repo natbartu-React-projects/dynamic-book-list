@@ -62,6 +62,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     clearInput();
+    setCurrentBookId(null);
 
     if (isInputInvalid()) return;
     !currentBookId ? addBook() : updateBook();
