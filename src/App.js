@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Container from "./components/container/Container";
 import Form from "./components/form/Form";
+import Table from "./components/table/Table";
 import "./App.css";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           currentBookId={currentBookId}
         />
       </Container>
+      <Table books={books} />
     </div>
   );
 };
