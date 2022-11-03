@@ -1,14 +1,33 @@
 import React from "react";
 
-const Form = () => {
+const Form = (props) => {
+  const { title, setTitle, author, setAuthor, isbn, setIsbn, currentBookId } =
+    props;
+
   return (
     <form>
       <label>Title</label>
-      <input type="text" />
+      <input
+        autoFocus
+        required
+        type="text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+      />
       <label>Author</label>
-      <input type="text" />
+      <input
+        required
+        type="text"
+        value={author}
+        onChange={(e) => setAuthor(e.target.value)}
+      />
       <label>ISBN#</label>
-      <input type="text" />
+      <input
+        required
+        type="text"
+        value={isbn}
+        onChange={(e) => setIsbn(e.target.value)}
+      />
     </form>
   );
 };
