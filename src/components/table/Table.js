@@ -12,10 +12,10 @@ const Table = ({ books }) => {
       </div>
       {books.map((book) => (
         <div key={book.bookId} className="tableRow">
-          <TableField />
-          <TableField />
-          <TableField />
-          <TableField />
+          <TableField fieldName={book.bookTitle} />
+          <TableField fieldName={book.bookAuthor} />
+          <TableField fieldName={book.bookIsbn} />
+          <TableField fieldName={book.bookTitle} />
         </div>
       ))}
     </div>
