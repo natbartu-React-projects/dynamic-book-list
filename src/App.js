@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import Container from "./components/container/Container";
 import Form from "./components/form/Form";
 import "./App.css";
 
@@ -19,9 +20,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="container">
+      <Container>
         <Form />
-      </div>
+      </Container>
     </div>
   );
 };
