@@ -1,7 +1,7 @@
 import React from "react";
 
-const TableField = () => {
-  return <div>TableField</div>;
+const TableField = (fieldName) => {
+  return <div className="tableField">{fieldName}</div>;
 };
 
 export default TableField;
