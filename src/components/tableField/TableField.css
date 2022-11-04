@@ -1,0 +1,25 @@
+.tableField {
+  width: 200px;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.tableField:last-of-type {
+  width: 110px;
+  text-align: right;
+}
+
+.tableField i {
+  cursor: pointer;
+  margin-right: 15px;
+  color: #765770;
+}
+
+/* Media Queries */
+
+@media (max-width: 530px) {
+
+  .tableField i {
+    margin-right: 3px; 
+  }
+}
