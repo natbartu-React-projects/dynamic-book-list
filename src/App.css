@@ -8,3 +8,10 @@
   width: 100%;
   min-height: 100vh;
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Gill Sans', sans-serif;
+  color: #4d4b4b;
+}
