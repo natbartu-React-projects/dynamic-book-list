@@ -40,10 +40,15 @@ const Form = (props) => {
             value={isbn}
             onChange={(e) => setIsbn(e.target.value)}
           />
-          {/* <button tabIndex="0" type="submit">
-        {currentBookId !== null ? "Update" : "Add"}
-      </button>
-      {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>} */}
+
+          {/* <div className="buttonContainer">
+            <button tabIndex="0" type="submit">
+              {currentBookId !== null ? "Update" : "Add"}
+            </button>
+            {currentBookId !== null && (
+              <button onClick={cancelEdit}>Cancel</button>
+            )}
+          </div> */}
         </form>
       </div>
       <div className="buttonContainer">
