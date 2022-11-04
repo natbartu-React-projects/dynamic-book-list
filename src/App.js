@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import MainContainer from "./components/container/MainContainer";
+import Container from "./components/container/Container";
 import Form from "./components/form/Form";
 import Table from "./components/table/Table";
 import "./App.css";
@@ -79,7 +79,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <MainContainer>
+      <Container>
         <Form
           title={title}
           setTitle={setTitle}
@@ -92,7 +92,7 @@ const App = () => {
           cancelEdit={cancelEdit}
         />
         <Table books={books} removeBook={removeBook} editBook={editBook} />
-      </MainContainer>
+      </Container>
     </div>
   );
 };

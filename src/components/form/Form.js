@@ -1,5 +1,4 @@
 import React from "react";
-import { FormControl, Typography, TextField } from "@mui/material";
 
 const Form = (props) => {
   const {
@@ -15,34 +14,24 @@ const Form = (props) => {
   } = props;
 
   return (
-    <FormControl onSubmit={handleSubmit}>
-      <Typography variant="h5" align="left" gutterBottom>
-        Title
-      </Typography>
-      <TextField
+    <form onSubmit={handleSubmit}>
+      <label>Title</label>
+      <input
         autoFocus
         required
-        label="Required"
-        placeholder="Title"
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <Typography variant="h5" align="left" gutterBottom>
-        Author
-      </Typography>
-      <TextField
-        label="Required"
-        placeholder="Author"
+      <label>Author</label>
+      <input
         required
         type="text"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
       />
-      <Typography variant="h5" align="left" gutterBottom>
-        ISBN#
-      </Typography>
-      <TextField
+      <label>ISBN#</label>
+      <input
         required
         type="text"
         value={isbn}
@@ -52,7 +41,7 @@ const Form = (props) => {
         {currentBookId !== null ? "Update" : "Add"}
       </button>
       {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>}
-    </FormControl>
+    </form>
   );
 };
 
