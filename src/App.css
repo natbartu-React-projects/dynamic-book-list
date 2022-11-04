@@ -15,3 +15,9 @@ h1 {
   font-family: 'Gill Sans', sans-serif;
   color: #4d4b4b;
 }
+
+@media (max-width: 830px) {
+  .App {
+    padding: 20px 10px;
+  }
+}
