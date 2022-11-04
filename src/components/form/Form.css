@@ -35,7 +35,10 @@ button {
 
 button:hover {
   background-color: #a38c9e;
- 
+}
+
+button:focus {
+  background-color: #a38c9e;
 }
 
 .buttonContainer {
