@@ -22,7 +22,28 @@ form input {
 }
 
 button {
-  width: 100%;
+  background-color: #765770;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 80%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: large;
+  /* margin-left: 80px; */
+  border: none;
+}
+
+button:hover {
+  background-color: #a38c9e;
+ 
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
 }
 
 label {

@@ -46,10 +46,13 @@ const Form = (props) => {
       {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>} */}
         </form>
       </div>
-      <button tabIndex="0" type="submit">
-        {currentBookId !== null ? "Update" : "Add"}
-      </button>
-      {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>}
+      <div className="buttonContainer">
+        {" "}
+        <button tabIndex="0" type="submit">
+          {currentBookId !== null ? "Update" : "Add"}
+        </button>
+        {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>}
+      </div>
     </>
   );
 };
