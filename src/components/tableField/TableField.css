@@ -23,3 +23,13 @@
     margin-right: 3px; 
   }
 }
+
+@media (max-width: 830px) {
+  .tableField,
+  .tableField:last-of-type {
+    width: 25%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+}
