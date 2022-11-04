@@ -1,0 +1,10 @@
+.table .tableHeading {
+  background-color: #4d4b4b;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import TableField from "../tableField/TableField";
+import "./Table.css";
 
 const Table = ({ books, removeBook, editBook }) => {
   return (
