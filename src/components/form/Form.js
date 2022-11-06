@@ -41,22 +41,17 @@ const Form = (props) => {
             onChange={(e) => setIsbn(e.target.value)}
           />
 
-          {/* <div className="buttonContainer">
-            <button tabIndex="0" type="submit">
+          <div className="buttonContainer">
+            <button tabIndex="0" type="submit" className="flexbutton">
               {currentBookId !== null ? "Update" : "Add"}
             </button>
             {currentBookId !== null && (
-              <button onClick={cancelEdit}>Cancel</button>
+              <button className="cancelButton" onClick={cancelEdit}>
+                Cancel
+              </button>
             )}
-          </div> */}
+          </div>
         </form>
-      </div>
-      <div className="buttonContainer">
-        {" "}
-        <button tabIndex="0" type="submit">
-          {currentBookId !== null ? "Update" : "Add"}
-        </button>
-        {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>}
       </div>
     </>
   );

@@ -2,16 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 .App {
   width: 100%;
   min-height: 100vh;
+  /* background: url(https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 h1 {
   text-align: center;
-  margin: 20px;
+  margin: 30px;
   font-family: 'Gill Sans', sans-serif;
   color: #4d4b4b;
 }
