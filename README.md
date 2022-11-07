@@ -10,4 +10,6 @@ To have a unique id on the application, I used a package called [uuid](https://w
 *Font Awesome*
 The icons used on the application is from [font awesome](https://fontawesome.com) library.
 
-# Application Preview
+## Application Preview
+
+![gif](assets/dynamic-book-list.gif)
