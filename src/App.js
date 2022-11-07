@@ -11,12 +11,12 @@ const App = () => {
   const [isbn, setIsbn] = useState("");
   const [currentBookId, setCurrentBookId] = useState(null);
   const [books, setBooks] = useState([
-    // {
-    //   bookTitle: "Book 1",
-    //   bookAuthor: "John Doe",
-    //   bookIsbn: "0000",
-    //   bookId: uuidv4(),
-    // },
+    {
+      bookTitle: "Book 1",
+      bookAuthor: "John Doe",
+      bookIsbn: "0000",
+      bookId: uuidv4(),
+    },
   ]);
 
   const isInputInvalid = () => {
