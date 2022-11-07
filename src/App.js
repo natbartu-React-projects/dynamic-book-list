@@ -52,7 +52,7 @@ const App = () => {
   const updateBook = () => {
     setBooks(
       books.map((book) =>
-        book.bookId
+        book.bookId === currentBookId
           ? { ...books, bookTitle: title, bookAuthor: author, bookIsbn: isbn }
           : book
       )
