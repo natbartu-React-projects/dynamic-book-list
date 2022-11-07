@@ -41,7 +41,7 @@ const Form = (props) => {
         />
 
         <div className="buttonContainer">
-          <button tabIndex="0" type="submit" className="flexbutton">
+          <button tabIndex="0" type="submit">
             {currentBookId !== null ? "Update" : "Add"}
           </button>
           {currentBookId !== null && (
